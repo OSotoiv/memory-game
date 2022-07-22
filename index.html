@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Memory Game!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Memory Game!</h1>
+
+  <div class="container">
+    <div id="forms">
+      <form id="start">
+        <label for="numCards">Number of Cards</label>
+        <select name="numCards" id="numCards">
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+        <button>START</button>
+      </form>
+      <form id="reset">
+        <button>RESET</button>
+      </form>
+    </div>
+    <div id="table">
+      <h2>HIGH SCORE</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Cards</th>
+            <th>Attempts</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tr>
+          <td id="cards10">10 Cards</td>
+          <td id="score10">12</td>
+          <td>00:00</td>
+        </tr>
+        <tr>
+          <td id="cards20">20 Cards</td>
+          <td id="score20">12</td>
+          <td>00:00</td>
+        </tr>
+      </table>
+    </div>
+    <h3>Attempts: <span id="attempts">0</span></h3>
+    <h3>Time: <span id="min">00</span>:<span id="sec">00</span></h3>
+  </div>
+
+  <div id="game">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
